@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Chi Tiết Sản Phẩm</title>
+    
+</head>
+<style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-details {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.product-details h1 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.product-details p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.price {
+    margin: 20px 0;
+    font-size:18px;
+}
+
+.old-price {
+    color: #999;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.similar-products {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.similar-products h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    
+}
+
+.product-item p {
+    line-height: 1.6;
+    color: #666;
+}
+a.product-item:link, a.product-item:visited{ 
+    background-color: grey;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    width: auto;
+  }
+</style>
+<body>
+    <header>
+        <div class="marquee-container">
+       <div class="marquee">
+         <pre>Miễn phí vận chuyển cho khách hàng mới                     Dễ dàng đổi trả trong vòng 15 ngày </pre>
+       </div>
+       </div>
+       </header>
+       
+       <nav class="navbar navbar-expand-sm navbar-light bg-light">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="javascript:void(0)"><b>Urbanestyle</b></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="mynavbar">
+           <ul class="navbar-nav me-auto">
+             <li class="nav-item">
+               <a class="nav-link" href="trangchu.html">Trang chủ</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#bst">Bộ sưu tập mới</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="javascript:void(0)">Danh mục </a>
+             </li>
+              <li class="nav-item">
+               <a class="nav-link" href="giohang.html">Giỏ hàng </a>
+             </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#lien-he">Liên hệ  </a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="login.html">Đăng nhập</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="dangki.html">Đăng kí </a>
+             </li>
+           </ul>
+           <div class="header-right">
+                 <i class="fas fa-search icon"></i>
+                 <i class="fas fa-shopping-cart icon"></i>
+             </div>
+           
+         </div>
+       </div>
+       </nav>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://i.pinimg.com/474x/30/a5/8c/30a58c07ad0203ffbd19dc9860d63c9c.jpg" alt="Sản phẩm" id="productImage">
+        </div>
+        <div class="product-details">
+            <h1 id="productName">Set áo baby doll và chân váy jean</h1>
+            <p id="productDescription">
+              
+                THÔNG TIN SẢN PHẨM:<br>
+                - Chất liệu: Áo babydoll  - Chân váy jean<br>
+                - Áo trễ vai cup ngực tay rớt có mút ngực<br>
+                - Quần được may 2 lớp<br>
+                - màu sắc Kem be<br>
+                *Có 3 size S - M - L<br>
+                - Size S:  53kg <br>
+                - Size M: 52 - 60kg<br>
+                - Size L: >58kg
+              
+                
+                </p>
+            <p class="price"><span class="old-price" id="oldPrice">500,000 VND</span> <span class="new-price" id="newPrice">400,000 VND</span></p>
+            <a class="product-item" href="giohang.html" target="_blank">Mua ngay </a>
+
+        </div>
+    </div>
+
+    <div class="similar-products">
+        <h2>Sản phẩm tương tự</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://i.pinimg.com/474x/e6/c3/73/e6c373502ca732e0417e12739fb6d748.jpg" alt="Sản phẩm tương tự 1">
+                <h3>Set croptop và chân váy jean</h3>
+                <p class="price">Giá:<span class="old-price">600,000 VND</span> <span class="new-price">450,000 VND</span></p>
+                <a class="product-item" href="chitietsp2.html" target="_blank">Chi tiết sản phẩm </a>
+
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/474x/b9/7b/f5/b97bf50743c47f8a88863285a8481fce.jpg" alt="Sản phẩm tương tự 2">
+                <h3>Set áo lưới và chân váy kaki</h3>
+                <p class="price">Giá:<span class="old-price">500,000 VND</span> <span class="new-price">450,000 VND</span></p>
+                <a class="product-item" href="chitietsp3.html" target="_blank">Chi tiết sản phẩm </a>
+            </div>
+            <div class="product-item">
+                <img src="https://i.pinimg.com/564x/44/86/39/448639fbba8b346ebf3130552944d633.jpg" alt="Sản phẩm tương tự 3">
+                <h3>Set áo len tăm trễ vai kèm chân váy jean</h3>
+                <p class="price">Giá:<span class="old-price">500,000 VND</span> <span class="new-price">450,000 VND</span></p>
+                <a class="product-item" href="chitietsp8.html" target="_blank">Chi tiết sản phẩm </a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer-columns">
+          <section id="lien-he"></section>
+          <div class="footer-column">
+            <h3>Thông tin liên hệ</h3>
+            <p>
+              Tư vấn khách hàng (miễn phí):
+              <a href="" style="color: #0d6efd">033546709</a>
+            </p>
+            <p>
+              Gọi chăm sóc khách hàng (miễn phí):
+              <a href="" style="color: #0d6efd">0347898605</a>
+            </p>
+            <p>
+              Hỗ trợ khách hàng:
+              <a href="" style="color: #0d6efd">cskh09@shop.vn</a>
+            </p>
+            <p>
+              Liên hệ báo giá:
+              <a href="" style="color: #0d6efd">baogia01@shoptt.vn</a>
+            </p>
+            <p>Địa chỉ: Tòa S217, Vinhome Ocean Park, Đa Tốn, Gia Lâm, Hà Nội</p>
+          </div>
+  
+          <div class="footer-column">
+            <h3>Chính sách</h3>
+            <ul>
+              <li><a href="#">Chính sách bảo mật</a></li>
+              <li><a href="#">Chính sách vận chuyển</a></li>
+              <li><a href="#">Chính sách đổi trả</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Phương thức thanh toán</h3>
+            <ul>
+              <li><i class="fab fa-cc-visa footer-icon"></i>VISA</li>
+              <li><i class="fab fa-cc-mastercard footer-icon"></i>MasterCard</li>
+              <li><i class="fab fa-cc-paypal footer-icon"></i>PayPal</li>
+              <img
+                src="https://www.charleskeith.vn/on/demandware.static/-/Library-Sites-CharlesKeithVN/default/dwee43b294/images/icons/BCT2.png" width="100%"
+                class="footer-image"
+              />
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Theo dõi chúng tôi</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-facebook footer-icon"></i>Facebook UrbaneStyle</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-youtube footer-icon"></i>YouTube UrbaneStyle</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-users footer-icon"></i>Kênh Thông Báo UrbaneStyle</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-instagram footer-icon"></i>Instagram:
+                  @UrbaneStyle</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+              <p><h4>&copy;URBANESTYLE , bản quyền được bảo hộ.</h4>   </p>
+          </div>
+      </footer>
+</body>
+</html>
